@@ -7,6 +7,9 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  @media all and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 
 }
 
@@ -19,10 +22,16 @@
   padding-top: 15px;
   color: white;
   font-size: 1.6rem;
+    @media all and (min-width: 768px) {
+      width: 60%;
+      text-align: left;
+      padding: 15px 15px 15px 45px;
+    }
 }
 
 .header-nav {
   width: 100%;
+    
 }
 
 .header-menu {
@@ -36,6 +45,10 @@
   opacity: 0.9;
   height: 45px;
   align-items: center;
+    @media all and (min-width: 768px) {
+      height: 100%;
+      background-color: $color-principal;
+    }
 
 }
 
@@ -49,5 +62,8 @@
   text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
+  @media all and (min-width: 768px) {
+    background-color: $color-principal;
+  }
 
 }

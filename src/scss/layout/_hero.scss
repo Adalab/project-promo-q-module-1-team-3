@@ -1,6 +1,5 @@
 .hero {
     height: 421px;
-    border: 5px solid black;
     background: url(https://github.com/Adalab/project-promo-q-module-1-team-3/blob/main/src/images/image-hero.jpg?raw=true);
     background-size: cover;
     background-repeat: repeat;
@@ -17,4 +16,14 @@
     transform: translate(0%, 100%);
     text-align: center;
     font-size: 1.8rem;
+    @media all and (min-width: 768px) {
+        opacity: 0.80;
+        text-align: left;
+        position: relative;
+        transform: translate(-10.625em);
+        margin-left: 45px;
+        width: 450px;
+        line-height: 1.25;
+
+}
 }

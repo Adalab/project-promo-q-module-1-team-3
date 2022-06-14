@@ -9,6 +9,7 @@
 .quienes-somos {
     text-align: center;
     padding: 0px 15px 0px 15px;
+    
 }
 
 .quienes-somos-list {
@@ -17,6 +18,29 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+
+    &__left{
+        flex-direction: row-reverse;
+    }
+
+    &__right{
+        justify-content: flex-end;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+
+.list-item-div{
+    @media all and (min-width: 768px){
+        display: flex;
+        flex-direction: left;
+        align-items: center;
+        text-align: left;     
+
+    }
 }
 
 .img-list-item {
@@ -26,6 +50,12 @@
     border-radius: 10px;
     border: solid $color-gris-fondo 5px;
 
+}
+
+.div-article{
+    @media all and (min: width 768px){
+        padding-left: 31px;
+    }
 }
 
 .name {
@@ -46,6 +76,9 @@
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    @media all and (min-width: 768px){
+        justify-content: flex-start;
+    }
 }
 
 .fa-brands,
